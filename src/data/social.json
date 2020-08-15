@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Facebook",
+    "icon": "./assets/images/icons/facebook.svg",
+    "url": "https://www.facebook.com/GDGNeiva"
+  },
+  {
+    "title": "Twitter",
+    "icon": "./assets/images/icons/twitter.svg",
+    "url": "https://twitter.com/GdgNeiva"
+  },
+  {
+    "title": "Linkedin",
+    "icon": "./assets/images/icons/linkedin.svg",
+    "url": "https://www.linkedin.com/company/gdg-neiva"
+  },
+  {
+    "title": "Google",
+    "icon": "./assets/images/icons/google.svg",
+    "url": "https://gdg.community.dev/gdg-neiva"
+  },
+  {
+    "title": "YouTube",
+    "icon": "./assets/images/icons/youtube.svg",
+    "url": "https://www.youtube.com/channel/UC8O6FHkRy1aan32cLTLK20w"
+  },
+  {
+    "title": "Whatsapp",
+    "icon": "./assets/images/icons/whatsapp.svg",
+    "url": "https://chat.whatsapp.com/KUhl9DCILnh40M7y1ghQdb"
+  }
+]

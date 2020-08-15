@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html ⚡>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <meta name="description" content="This is the AMP Boilerplate." />
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script
+      async
+      custom-element="amp-list"
+      src="https://cdn.ampproject.org/v0/amp-list-0.1.js"
+    ></script>
+    <script
+      async
+      custom-template="amp-mustache"
+      src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"
+    ></script>
+    <script
+      async
+      custom-element="amp-twitter"
+      src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"
+    ></script>
+    <script
+      async
+      custom-element="amp-analytics"
+      src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"
+    ></script>
+    <!-- Import other AMP Extensions here -->
+    <style amp-custom>
+      body {
+        font-family: "Google Sans", sans-serif;
+        font-display: swap;
+      }
+
+      h2 {
+        color: #292d33;
+      }
+
+      h3,
+      p,
+      time {
+        color: #676c72;
+      }
+
+      .text-italic {
+        font-style: italic;
+      }
+
+      /* *********** BEGIN - Header ************* */
+      .ot-header {
+        padding-top: 30px;
+        height: 100vh;
+        position: relative;
+      }
+      .ot-header .ot-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
+      .ot-title-container {
+        height: 150px;
+        text-align: center;
+      }
+      .ot-title-container h1 {
+        margin-bottom: 0;
+      }
+      .ot-title-container p {
+        margin-top: 0;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+
+      .ot-social-container {
+        text-align: center;
+        margin-top: 18px;
+      }
+      .ot-social-container a {
+        margin: 4px;
+        text-decoration: none;
+      }
+      /* *********** END - Header ************* */
+
+      /* *********** BEGIN - Section about ************* */
+      .ot-about-section {
+        background-color: #f1f3f4;
+        text-align: center;
+        padding: 20px;
+      }
+      .ot-about-section p {
+        text-align: justify;
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+      /* *********** END - Section about ************* */
+
+      /* *********** BEGIN - Section event ************* */
+      .ot-event-section {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .ot-card-event {
+        background-color: #f1f3f4;
+        border-radius: 0.5em;
+        border: 1px solid#eaebec;
+        width: 400px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+      .ot-card-event .ot-card-head img {
+        background-color: #ffffff;
+        border-radius: 50%;
+      }
+      .ot-card-event .ot-card-body p {
+        text-align: justify;
+      }
+      .ot-card-event .ot-card-footer p {
+        text-transform: uppercase;
+        margin-bottom: 0;
+      }
+      .ot-card-event-active {
+        border-bottom: 8px solid #0f9d58ff;
+      }
+      .ot-card-event-inactive {
+        border-bottom: 8px solid #ea4335ff;
+      }
+      /* *********** END - Section event ************* */
+
+      /* *********** BEGIN - Section sponsor ************* */
+      .ot-sponsor-container {
+        text-align: center;
+        padding: 20px;
+      }
+      /* *********** END - Section sponsor ************* */
+
+      /* *********** BEGIN - Section team ************* */
+      .ot-team-container {
+        background-color: #f1f3f4;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .ot-card-team {
+        background-color: #ffffff;
+        border-radius: 0.5em;
+        border: 1px solid#eaebec;
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+      .ot-card-team .ot-card-head img {
+        border-radius: 50%;
+      }
+
+      /* *********** END - Section team ************* */
+
+      /* *********** BEGIN - Section twitter ************* */
+      .ot-tweet-container {
+        text-align: center;
+        padding: 20px;
+      }
+      /* *********** END - Section twitter ************* */
+
+      /* *********** BEGIN - Footer ************* */
+      .ot-footer {
+        background-color: #292d33;
+        text-align: center;
+        padding: 20px;
+        height: 100px;
+      }
+      .ot-footer .ot-copyright {
+        color: #ffffff;
+      }
+      .ot-footer .ot-span {
+        margin-bottom: 0;
+      }
+      .ot-footer .ot-span a {
+        text-decoration: none;
+        color: #676c72;
+      }
+      /* *********** END - Footer ************* */
+    </style>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      }
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+    </style>
+    <noscript
+      ><style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none;
+        }
+      </style></noscript
+    >
+
+    <link rel="canonical" href="./index.not.html" />
+    <title>GDG Neiva</title>
+  </head>
+  <body>
+    <header class="ot-header">
+      <div class="ot-container">
+        <div class="ot-title-container">
+          <amp-img
+            layout="intrinsic"
+            width="100"
+            height="50"
+            alt="GDG Neiva"
+            src="./assets/images/logos/gdg.svg"
+          >
+          </amp-img>
+          <h1>GDG Neiva</h1>
+          <p>CONECTAR | APRENDER | CRECER</p>
+        </div>
+
+        <div class="ot-social-container">
+          <amp-list
+            layout="fixed-height"
+            width="auto"
+            height="54"
+            src="./data/social.json"
+            items="."
+            binding="refresh"
+          >
+            <template type="amp-mustache">
+              <a title="{{title}}" href="{{url}}" target="_blank">
+                <amp-img width="24" height="24" src="{{icon}}" alt="{{title}}">
+                </amp-img>
+              </a>
+            </template>
+          </amp-list>
+        </div>
+      </div>
+    </header>
+
+    <main class="ot-main">
+      <section class="ot-about-section">
+        <div class="ot-container">
+          <h2>Acerca de</h2>
+
+          <h3>¿Qué es Google Developer Group (GDG)?</h3>
+          <p>
+            Los GDG son grupos locales de desarrolladores que están
+            específicamente interesados ​​en los productos y API de Google:
+            desde plataformas de Android, App Engine y Mobile Web, hasta API de
+            productos para productos como Google Maps, YouTube, Google Calendar
+            y más.
+            <span class="text-italic">
+              Existe la libertad de utilizar tecnologías diferentes a las de
+              Google.
+            </span>
+          </p>
+
+          <h3>¿Por qué el GDG Neiva?</h3>
+          <p>
+            GDG Neiva se crea con la misión de unir Developers, y personas
+            amantes de la tecnología, con las ganas de aprender y compartir
+            conocimientos técnicos, laborales y empresariales que hacen parte
+            del mundo tecnológico.
+          </p>
+          <p>
+            Debemos dejar en alto el nombre de nuestra región a nivel nacional e
+            internacional, siendo una comunidad sin ánimo de lucro, pero
+            contando con el apoyo de Google.
+          </p>
+        </div>
+      </section>
+
+      <section class="ot-event-section">
+        <h2>Eventos</h2>
+        <amp-list
+          layout="fixed-height"
+          width="auto"
+          height="100"
+          src="./data/events.json"
+          items="."
+          binding="refresh"
+        >
+          <template type="amp-mustache">
+            <div class="ot-card-event ot-card-event-{{state}}">
+              <div class="ot-card-head">
+                <amp-img
+                  width="173"
+                  height="173"
+                  layout="intrinsic"
+                  src="{{imgUrl}}"
+                  alt="{{title}}"
+                >
+                  <div fallback>No existe el recurso</div>
+                </amp-img>
+              </div>
+              <div class="ot-card-body">
+                <time>{{date}}</time>
+                <h3>{{title}}</h3>
+                <p>{{description}}</p>
+              </div>
+              <div class="ot-card-footer">
+                <p>{{state}}</p>
+              </div>
+            </div>
+          </template>
+          <div placeholder>Cargando ...</div>
+          <div fallback>Error al cargar los eventos.</div>
+        </amp-list>
+      </section>
+
+      <section class="ot-sponsor-container">
+        <h2>Apoya</h2>
+        <amp-img
+          layout="intrinsic"
+          width="210"
+          height="150"
+          src="./assets/images/sponsors/google.png"
+          alt="Google"
+        >
+          <div fallback>No existe el recurso</div>
+        </amp-img>
+      </section>
+
+      <section class="ot-team-container">
+        <h2>Equipo</h2>
+        <amp-list
+          layout="fixed-height"
+          width="auto"
+          height="100"
+          items="organizers"
+          src="./data/organizers.json"
+          binding="refresh"
+        >
+          <template type="amp-mustache">
+            <div class="ot-card-team">
+              <div class="ot-card-head">
+                <amp-img
+                  width="173"
+                  height="173"
+                  src="{{imgUrl}}"
+                  alt="{{fullName}}"
+                >
+                  <div fallback>No existe el recurso</div>
+                </amp-img>
+              </div>
+              <div class="ot-card-body">
+                <h3>{{fullName}}</h3>
+                <p>{{occupation}}</p>
+              </div>
+              <div class="ot-card-footer">
+                <a
+                  title="Twitter"
+                  href="https://twitter.com/{{twitter}}"
+                  target="_blank"
+                >
+                  <amp-img
+                    width="20"
+                    height="20"
+                    src="./assets/images/icons/twitter.svg"
+                    alt="Twitter {{twitter}}"
+                  >
+                  </amp-img>
+                </a>
+              </div>
+            </div>
+          </template>
+          <div placeholder>Cargando ...</div>
+          <div fallback>Error al cargar los organizadores.</div>
+        </amp-list>
+      </section>
+
+      <section class="ot-tweet-container">
+        <h2>Tweets</h2>
+        <amp-twitter
+          layout="responsive"
+          width="300"
+          height="500"
+          data-tweetid="1289324462802788353"
+        ></amp-twitter>
+      </section>
+    </main>
+
+    <footer class="ot-footer">
+      <p class="ot-copyright">© 2020 GDGNeiva</p>
+      <p class="ot-span">
+        Iconos diseñados por
+        <a
+          href="https://www.flaticon.es/autores/freepik"
+          title="Freepik"
+          target="_blank"
+          >Freepik</a
+        >
+        from
+        <a href="https://www.flaticon.es/" title="Flaticon" target="_blank">
+          www.flaticon.es</a
+        >
+      </p>
+    </footer>
+
+    <amp-analytics type="googleanalytics">
+      <script type="application/json">
+        {
+          "vars": {
+            "account": "UA-175457700-1"
+          },
+          "triggers": {
+            "default pageview": {
+              "on": "visible",
+              "request": "pageview",
+              "vars": {
+                "title": "AMP - Prueba ingreso"
+              }
+            }
+          }
+        }
+      </script>
+    </amp-analytics>
+  </body>
+</html>

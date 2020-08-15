@@ -1,0 +1,37 @@
+[
+  {
+    "imgUrl": "./assets/images/events/amp.png",
+    "title": "AMP Study Jam | Neiva",
+    "description": "En este gran evento tenemos la oportunidad de aprender AMP, un Framework HTML de código abierto creado por Google que proporciona una forma sencilla de crear páginas web que son rápidas, fáciles de cargar y priorizan la experiencia del usuario por encima de todo.",
+    "date": "AGO 15, 2020",
+    "state": "active"
+  },
+  {
+    "imgUrl": "./assets/images/events/event.png",
+    "title": "Android 11 | Neiva",
+    "description": "Android 11, es una serie de eventos realizados a nivel mundial. Gracias al apoyo de Google podemos organizar uno en nuestra ciudad.",
+    "date": "JUL 11, 2020",
+    "state": "inactive"
+  },
+  {
+    "imgUrl": "./assets/images/events/event.png",
+    "title": "Conociendo mi gente",
+    "description": "Conociendo mi gente, es un conversatorio con el objetivo de conocer la demanda y oferta tecnológica de nuestra región.",
+    "date": "JUN 13, 2020",
+    "state": "inactive"
+  },
+  {
+    "imgUrl": "./assets/images/events/event.png",
+    "title": "Firebase Study Jams | Neiva",
+    "description": "Firebase Study Jams es una gran oportunidad para aprender cómo desarrollar aplicaciones web utilizando algunas de las funciones recientemente lanzadas de Firebase para el desarrollo web.",
+    "date": "ABR 25, 2020",
+    "state": "inactive"
+  },
+  {
+    "imgUrl": "./assets/images/events/event.png",
+    "title": "International Women's Day | Neiva",
+    "description": "Google celebra el Día Internacional de la Mujer con la serie de eventos IWD de Google.",
+    "date": "APR 4, 2020",
+    "state": "inactive"
+  }
+]

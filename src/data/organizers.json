@@ -1,0 +1,28 @@
+{
+  "organizers": [
+    {
+      "imgUrl": "./assets/images/organizers/oscar-tovar.png",
+      "fullName": "Oscar Uriel Rodriguez Tovar",
+      "occupation": "Desarrollador de Sofware",
+      "twitter": "okarook"
+    },
+    {
+      "imgUrl": "./assets/images/organizers/alfredo-rojas.png",
+      "fullName": "Alfredo Rojas Cuevas",
+      "occupation": "CTO",
+      "twitter": "naciostars"
+    },
+    {
+      "imgUrl": "./assets/images/organizers/maira-tovar.png",
+      "fullName": "Maira Alejandra Rodriguez Tovar",
+      "occupation": "QA",
+      "twitter": ""
+    },
+    {
+      "imgUrl": "./assets/images/organizers/ricardo-velandia.png",
+      "fullName": "Ricardo Velandia",
+      "occupation": "Desarrollador de Sofware",
+      "twitter": "ricvch"
+    }
+  ]
+}
